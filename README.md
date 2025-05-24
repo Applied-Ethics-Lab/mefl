@@ -29,23 +29,23 @@ This project is developed by the Applied Ethics Lab.
 
 Clone the repository:
 
-\`\`\`bash
+```bash
 git clone https://github.com/Applied-Ethics-Lab/mefl.git
 cd mefl
-\`\`\`
+```
 
 (Optional) Create and activate a virtual environment:
 
-\`\`\`bash
+```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-\`\`\`
+```
 
 Install dependencies if any (currently none required):
 
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 ---
 
@@ -53,18 +53,18 @@ pip install -r requirements.txt
 
 Run MEFL programs with the interpreter:
 
-\`\`\`bash
+```bash
 python mefl-lang/main.py path/to/your_program.mefl
-\`\`\`
+```
 
 ### Sample Usage
 
 Here is a quick example that evaluates the ethics of an action involving lying:
 
-\`\`\`mefl
+```mefl
 let action = {"actions": ["lie"]}
 print(is_ethical(action))
-\`\`\`
+```
 
 This will output \`False\` because lying violates the perfect duty of No Lying.
 
