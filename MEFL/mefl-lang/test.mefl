@@ -1,0 +1,42 @@
+// Function to greet ethically
+function greetEthical(name) {
+    if (isEthicalAction("greet", name)) {
+        print("Hello, " + name + "!");
+        return "Greeted ethically";
+    } else {
+        print("Cannot greet unethically.");
+        return "Ethical greeting failed";
+    }
+}
+
+// Custom Tree example usage
+let ethicsTree = createEthicsDecisionTree();
+let decision = ethicsTree.evaluate("help someone in need");
+
+print("Ethics decision: " + decision);
+
+// Loop example: count from 1 to 5
+let count = 1;
+while (count <= 5) {
+    print("Count is: " + count);
+    count = count + 1;
+}
+
+// Using a custom graph (assuming graph module loaded)
+let graph = createGraph();
+graph.addNode("A");
+graph.addNode("B");
+graph.addEdge("A", "B");
+
+print("Graph nodes count: " + graph.nodeCount());
+
+// Use custom list
+let myList = createList();
+myList.append(10);
+myList.append(20);
+
+print("List first element: " + myList.get(0));
+
+// Call greetEthical function
+let result = greetEthical("Murari");
+print(result);
